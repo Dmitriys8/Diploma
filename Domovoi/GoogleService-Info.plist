@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>929258466397-5as899qk7gl7i2iupu151ghqa2g7rkt0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.929258466397-5as899qk7gl7i2iupu151ghqa2g7rkt0</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA9WRCqwtAD9VPnX1koLiHmBLIN1X_WG_I</string>
+	<key>GCM_SENDER_ID</key>
+	<string>929258466397</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.domovoi.ios</string>
+	<key>PROJECT_ID</key>
+	<string>domovoi-e1708</string>
+	<key>STORAGE_BUCKET</key>
+	<string>domovoi-e1708.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<false/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:929258466397:ios:b805fe353a377208</string>
+	<key>DATABASE_URL</key>
+	<string>https://domovoi-e1708.firebaseio.com</string>
+</dict>
+</plist>

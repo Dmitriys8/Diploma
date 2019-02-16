@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="87" id="KGk-i7-Jjw" customClass="PeopleTableViewCell" customModule="Domovoi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="369" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="369" height="86.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0x2-dX-ZCT">
+                        <rect key="frame" x="242.5" y="13" width="60" height="60"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N.S.P" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dha-ZR-gx9">
+                        <rect key="frame" x="89" y="33" width="264" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabBarPeople" translatesAutoresizingMaskIntoConstraints="NO" id="WVw-kI-cyH">
+                        <rect key="frame" x="16" y="11" width="65" height="65"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="WVw-kI-cyH" secondAttribute="height" multiplier="1:1" id="OBK-aY-DvY"/>
+                            <constraint firstAttribute="width" constant="65" id="kji-2D-V7D"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dha-ZR-gx9" firstAttribute="leading" secondItem="WVw-kI-cyH" secondAttribute="trailing" constant="8" id="45i-yg-a36"/>
+                    <constraint firstItem="dha-ZR-gx9" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6H4-U3-DeB"/>
+                    <constraint firstItem="WVw-kI-cyH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="U6o-RX-XNk"/>
+                    <constraint firstItem="WVw-kI-cyH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Ztg-t2-H6U"/>
+                    <constraint firstItem="dha-ZR-gx9" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="qge-Jy-ehv"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="WVw-kI-cyH" secondAttribute="bottom" id="wMQ-Pj-afX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="NameField" destination="dha-ZR-gx9" id="rMu-Wz-gH4"/>
+            </connections>
+            <point key="canvasLocation" x="-58.5" y="-78.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tabBarPeople" width="30" height="30"/>
+    </resources>
+</document>

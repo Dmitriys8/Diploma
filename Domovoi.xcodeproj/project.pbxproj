@@ -1,0 +1,1028 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18DCB21A204F338F006D00AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DCB219204F338F006D00AB /* AppDelegate.swift */; };
+		18DCB221204F338F006D00AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DCB21F204F338F006D00AB /* Main.storyboard */; };
+		18DCB226204F338F006D00AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DCB224204F338F006D00AB /* LaunchScreen.storyboard */; };
+		18DCB231204F338F006D00AB /* DomovoiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DCB230204F338F006D00AB /* DomovoiTests.swift */; };
+		18DCB23C204F338F006D00AB /* DomovoiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DCB23B204F338F006D00AB /* DomovoiUITests.swift */; };
+		7E6B4B9C11A35E2FF79F2D45 /* Pods_DomovoiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E37DE7A904ECA6B93FD06407 /* Pods_DomovoiTests.framework */; };
+		A10BA14E207B5BF00052C303 /* PeopleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10BA14D207B5BF00052C303 /* PeopleTableViewController.swift */; };
+		A10BA150207B5CA40052C303 /* HousesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10BA14F207B5CA40052C303 /* HousesTableViewController.swift */; };
+		A110FC6B20B1DD6100446920 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A110FC6A20B1DD6100446920 /* TabBarViewController.swift */; };
+		A110FC7120B2208000446920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A110FC7020B2208000446920 /* Assets.xcassets */; };
+		A114316A20B3333000422D70 /* AddPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114316820B3333000422D70 /* AddPeopleViewController.swift */; };
+		A114316B20B3333000422D70 /* AddPeopleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A114316920B3333000422D70 /* AddPeopleViewController.xib */; };
+		A114316E20B3333C00422D70 /* AddHouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114316C20B3333C00422D70 /* AddHouseViewController.swift */; };
+		A114316F20B3333C00422D70 /* AddHouseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A114316D20B3333C00422D70 /* AddHouseViewController.xib */; };
+		A114317120B3334600422D70 /* AddServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114317020B3334600422D70 /* AddServiceViewController.swift */; };
+		A114317320B3336500422D70 /* AddServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A114317220B3336500422D70 /* AddServiceViewController.xib */; };
+		A114317520B338B000422D70 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114317420B338B000422D70 /* AddContactViewController.swift */; };
+		A114317720B338BC00422D70 /* AddContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A114317620B338BB00422D70 /* AddContactViewController.xib */; };
+		A117C97420B5750F00C2AB10 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117C97320B5750F00C2AB10 /* Counter.swift */; };
+		A117C97620B577E100C2AB10 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117C97520B577E100C2AB10 /* LaunchViewController.swift */; };
+		A11DD911207E2F470073A88D /* PeopleEditorTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11DD910207E2F470073A88D /* PeopleEditorTableView.swift */; };
+		A11DD913207E2F580073A88D /* HouseEditorTableVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11DD912207E2F580073A88D /* HouseEditorTableVIew.swift */; };
+		A11DD915207E2F670073A88D /* ServiceEditorTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11DD914207E2F670073A88D /* ServiceEditorTableView.swift */; };
+		A11DD91A207E43ED0073A88D /* ConsiergeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11DD919207E43ED0073A88D /* ConsiergeTableViewController.swift */; };
+		A11E3B51207D04E2002DBB95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A11E3B50207D04E2002DBB95 /* GoogleService-Info.plist */; };
+		A11E3B52207D04E2002DBB95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A11E3B50207D04E2002DBB95 /* GoogleService-Info.plist */; };
+		A11E3B53207D04E2002DBB95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A11E3B50207D04E2002DBB95 /* GoogleService-Info.plist */; };
+		A18D8DC1207D0ED9008BB9BD /* HouseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A18D8DC0207D0ED9008BB9BD /* HouseTableViewCell.xib */; };
+		A18D8DC4207D10D0008BB9BD /* ServiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A18D8DC3207D10D0008BB9BD /* ServiceTableViewCell.xib */; };
+		A19102CE205D3FF500470F48 /* ConsiergeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19102CD205D3FF500470F48 /* ConsiergeInfo.swift */; };
+		A1A2F48A20612F8E00D68E1C /* PeoplePageTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A2F48920612F8E00D68E1C /* PeoplePageTableView.swift */; };
+		A1A2F48C20612FEB00D68E1C /* HousePageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A2F48B20612FEB00D68E1C /* HousePageTableViewController.swift */; };
+		A1A2F48E206130AB00D68E1C /* ServicePageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A2F48D206130AB00D68E1C /* ServicePageTableViewController.swift */; };
+		A1C640E0207FB1C8003BFEBF /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C640DF207FB1C8003BFEBF /* ContactsTableViewController.swift */; };
+		A1EF71C12080DA72003B420E /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1EF71C02080DA72003B420E /* ContactTableViewCell.xib */; };
+		A1EF71C62080DDF9003B420E /* HouseCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF71C52080DDF9003B420E /* HouseCellModel.swift */; };
+		A1EF71C82080DE34003B420E /* PeopleCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF71C72080DE34003B420E /* PeopleCellModel.swift */; };
+		A1EF71CA2080DE42003B420E /* ServiceCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF71C92080DE42003B420E /* ServiceCellModel.swift */; };
+		A1EF71CC2080DE51003B420E /* ContactCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF71CB2080DE51003B420E /* ContactCellModel.swift */; };
+		A1EF71CF2080DF57003B420E /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF71CE2080DF57003B420E /* PeopleTableViewCell.swift */; };
+		A1EF71D12080DF80003B420E /* HouseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF71D02080DF80003B420E /* HouseTableViewCell.swift */; };
+		A1EF71D32080DFB9003B420E /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF71D22080DFB9003B420E /* ServiceTableViewCell.swift */; };
+		A1EF71D52080DFE9003B420E /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF71D42080DFE9003B420E /* ContactTableViewCell.swift */; };
+		A1F2A46420599D88001670D8 /* ServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2A46320599D88001670D8 /* ServicesTableViewController.swift */; };
+		A1F2A46820599F04001670D8 /* PeopleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1F2A46620599F04001670D8 /* PeopleTableViewCell.xib */; };
+		A1F5E7DC2081F18800095BD9 /* ConsiergeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F5E7DA2081F18800095BD9 /* ConsiergeTableViewCell.swift */; };
+		A1F5E7DD2081F18800095BD9 /* ConsiergeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1F5E7DB2081F18800095BD9 /* ConsiergeTableViewCell.xib */; };
+		C77573EC0E4EDADB3820FB90 /* Pods_DomovoiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99080DF75C9E78CEF9533A2D /* Pods_DomovoiUITests.framework */; };
+		EE265F995AF22CB7B70FA7AA /* Pods_Domovoi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED569810DCB899BED126002E /* Pods_Domovoi.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18DCB22D204F338F006D00AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18DCB20E204F338F006D00AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18DCB215204F338F006D00AB;
+			remoteInfo = Domovoi;
+		};
+		18DCB238204F338F006D00AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18DCB20E204F338F006D00AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18DCB215204F338F006D00AB;
+			remoteInfo = Domovoi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18DCB216204F338F006D00AB /* Domovoi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Domovoi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18DCB219204F338F006D00AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18DCB220204F338F006D00AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18DCB225204F338F006D00AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18DCB227204F338F006D00AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18DCB22C204F338F006D00AB /* DomovoiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomovoiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18DCB230204F338F006D00AB /* DomovoiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomovoiTests.swift; sourceTree = "<group>"; };
+		18DCB232204F338F006D00AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18DCB237204F338F006D00AB /* DomovoiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomovoiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18DCB23B204F338F006D00AB /* DomovoiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomovoiUITests.swift; sourceTree = "<group>"; };
+		18DCB23D204F338F006D00AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F13A2B3B12E1D66A73ECA6B /* Pods-Domovoi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domovoi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Domovoi/Pods-Domovoi.debug.xcconfig"; sourceTree = "<group>"; };
+		99080DF75C9E78CEF9533A2D /* Pods_DomovoiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DomovoiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10BA14D207B5BF00052C303 /* PeopleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewController.swift; sourceTree = "<group>"; };
+		A10BA14F207B5CA40052C303 /* HousesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesTableViewController.swift; sourceTree = "<group>"; };
+		A110FC6A20B1DD6100446920 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		A110FC7020B2208000446920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A114316820B3333000422D70 /* AddPeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPeopleViewController.swift; sourceTree = "<group>"; };
+		A114316920B3333000422D70 /* AddPeopleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPeopleViewController.xib; sourceTree = "<group>"; };
+		A114316C20B3333C00422D70 /* AddHouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHouseViewController.swift; sourceTree = "<group>"; };
+		A114316D20B3333C00422D70 /* AddHouseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddHouseViewController.xib; sourceTree = "<group>"; };
+		A114317020B3334600422D70 /* AddServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServiceViewController.swift; sourceTree = "<group>"; };
+		A114317220B3336500422D70 /* AddServiceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddServiceViewController.xib; sourceTree = "<group>"; };
+		A114317420B338B000422D70 /* AddContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		A114317620B338BB00422D70 /* AddContactViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddContactViewController.xib; sourceTree = "<group>"; };
+		A117C97320B5750F00C2AB10 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		A117C97520B577E100C2AB10 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		A11DD910207E2F470073A88D /* PeopleEditorTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleEditorTableView.swift; sourceTree = "<group>"; };
+		A11DD912207E2F580073A88D /* HouseEditorTableVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseEditorTableVIew.swift; sourceTree = "<group>"; };
+		A11DD914207E2F670073A88D /* ServiceEditorTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceEditorTableView.swift; sourceTree = "<group>"; };
+		A11DD919207E43ED0073A88D /* ConsiergeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsiergeTableViewController.swift; sourceTree = "<group>"; };
+		A11E3B50207D04E2002DBB95 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A18D8DC0207D0ED9008BB9BD /* HouseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseTableViewCell.xib; sourceTree = "<group>"; };
+		A18D8DC3207D10D0008BB9BD /* ServiceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceTableViewCell.xib; sourceTree = "<group>"; };
+		A19102CD205D3FF500470F48 /* ConsiergeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsiergeInfo.swift; sourceTree = "<group>"; };
+		A1A2F48920612F8E00D68E1C /* PeoplePageTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplePageTableView.swift; sourceTree = "<group>"; };
+		A1A2F48B20612FEB00D68E1C /* HousePageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousePageTableViewController.swift; sourceTree = "<group>"; };
+		A1A2F48D206130AB00D68E1C /* ServicePageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePageTableViewController.swift; sourceTree = "<group>"; };
+		A1C640DF207FB1C8003BFEBF /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		A1EF71C02080DA72003B420E /* ContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
+		A1EF71C52080DDF9003B420E /* HouseCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseCellModel.swift; sourceTree = "<group>"; };
+		A1EF71C72080DE34003B420E /* PeopleCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCellModel.swift; sourceTree = "<group>"; };
+		A1EF71C92080DE42003B420E /* ServiceCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCellModel.swift; sourceTree = "<group>"; };
+		A1EF71CB2080DE51003B420E /* ContactCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCellModel.swift; sourceTree = "<group>"; };
+		A1EF71CE2080DF57003B420E /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
+		A1EF71D02080DF80003B420E /* HouseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseTableViewCell.swift; sourceTree = "<group>"; };
+		A1EF71D22080DFB9003B420E /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
+		A1EF71D42080DFE9003B420E /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		A1F2A46320599D88001670D8 /* ServicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewController.swift; sourceTree = "<group>"; };
+		A1F2A46620599F04001670D8 /* PeopleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeopleTableViewCell.xib; sourceTree = "<group>"; };
+		A1F5E7DA2081F18800095BD9 /* ConsiergeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsiergeTableViewCell.swift; sourceTree = "<group>"; };
+		A1F5E7DB2081F18800095BD9 /* ConsiergeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConsiergeTableViewCell.xib; sourceTree = "<group>"; };
+		A4186A87F24F81225B38FD61 /* Pods-DomovoiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomovoiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DomovoiUITests/Pods-DomovoiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C0658DA0A02590219031BFAA /* Pods-DomovoiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomovoiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DomovoiTests/Pods-DomovoiTests.release.xcconfig"; sourceTree = "<group>"; };
+		D8EA705C6CD41B6DE83B4EF6 /* Pods-DomovoiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomovoiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DomovoiUITests/Pods-DomovoiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD34BCDF69E3EC316D10D4EA /* Pods-DomovoiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomovoiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DomovoiTests/Pods-DomovoiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E37DE7A904ECA6B93FD06407 /* Pods_DomovoiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DomovoiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED569810DCB899BED126002E /* Pods_Domovoi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domovoi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB38C2B4A6CCF1BEC35CD6A0 /* Pods-Domovoi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domovoi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Domovoi/Pods-Domovoi.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18DCB213204F338F006D00AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE265F995AF22CB7B70FA7AA /* Pods_Domovoi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18DCB229204F338F006D00AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E6B4B9C11A35E2FF79F2D45 /* Pods_DomovoiTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18DCB234204F338F006D00AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C77573EC0E4EDADB3820FB90 /* Pods_DomovoiUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18DCB20D204F338F006D00AB = {
+			isa = PBXGroup;
+			children = (
+				18DCB218204F338F006D00AB /* Domovoi */,
+				18DCB22F204F338F006D00AB /* DomovoiTests */,
+				18DCB23A204F338F006D00AB /* DomovoiUITests */,
+				18DCB217204F338F006D00AB /* Products */,
+				B0AF318F61A09E250378779D /* Pods */,
+				73967FDDF8DD4A28B04C9F9C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18DCB217204F338F006D00AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18DCB216204F338F006D00AB /* Domovoi.app */,
+				18DCB22C204F338F006D00AB /* DomovoiTests.xctest */,
+				18DCB237204F338F006D00AB /* DomovoiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18DCB218204F338F006D00AB /* Domovoi */ = {
+			isa = PBXGroup;
+			children = (
+				A1B1D21620A190670002B551 /* AddViews */,
+				A18D8DC2207D0FCD008BB9BD /* CellsXibs */,
+				A1EF71CD2080DF29003B420E /* TableViewCells */,
+				A1EF71C22080DDAF003B420E /* CellModels */,
+				A11DD916207E2F700073A88D /* Editors */,
+				A1384A39206301810018F49D /* FirstScenes */,
+				A1384A3A2063018D0018F49D /* PersonalPages */,
+				A11DD919207E43ED0073A88D /* ConsiergeTableViewController.swift */,
+				A19102CD205D3FF500470F48 /* ConsiergeInfo.swift */,
+				18DCB219204F338F006D00AB /* AppDelegate.swift */,
+				18DCB21F204F338F006D00AB /* Main.storyboard */,
+				A110FC6A20B1DD6100446920 /* TabBarViewController.swift */,
+				A1C640DF207FB1C8003BFEBF /* ContactsTableViewController.swift */,
+				A110FC7020B2208000446920 /* Assets.xcassets */,
+				18DCB224204F338F006D00AB /* LaunchScreen.storyboard */,
+				A117C97520B577E100C2AB10 /* LaunchViewController.swift */,
+				18DCB227204F338F006D00AB /* Info.plist */,
+				A11E3B50207D04E2002DBB95 /* GoogleService-Info.plist */,
+				A117C97320B5750F00C2AB10 /* Counter.swift */,
+			);
+			path = Domovoi;
+			sourceTree = "<group>";
+		};
+		18DCB22F204F338F006D00AB /* DomovoiTests */ = {
+			isa = PBXGroup;
+			children = (
+				18DCB230204F338F006D00AB /* DomovoiTests.swift */,
+				18DCB232204F338F006D00AB /* Info.plist */,
+			);
+			path = DomovoiTests;
+			sourceTree = "<group>";
+		};
+		18DCB23A204F338F006D00AB /* DomovoiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18DCB23B204F338F006D00AB /* DomovoiUITests.swift */,
+				18DCB23D204F338F006D00AB /* Info.plist */,
+			);
+			path = DomovoiUITests;
+			sourceTree = "<group>";
+		};
+		73967FDDF8DD4A28B04C9F9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED569810DCB899BED126002E /* Pods_Domovoi.framework */,
+				E37DE7A904ECA6B93FD06407 /* Pods_DomovoiTests.framework */,
+				99080DF75C9E78CEF9533A2D /* Pods_DomovoiUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A11DD916207E2F700073A88D /* Editors */ = {
+			isa = PBXGroup;
+			children = (
+				A11DD910207E2F470073A88D /* PeopleEditorTableView.swift */,
+				A11DD912207E2F580073A88D /* HouseEditorTableVIew.swift */,
+				A11DD914207E2F670073A88D /* ServiceEditorTableView.swift */,
+			);
+			path = Editors;
+			sourceTree = "<group>";
+		};
+		A1384A39206301810018F49D /* FirstScenes */ = {
+			isa = PBXGroup;
+			children = (
+				A1F2A46320599D88001670D8 /* ServicesTableViewController.swift */,
+				A10BA14D207B5BF00052C303 /* PeopleTableViewController.swift */,
+				A10BA14F207B5CA40052C303 /* HousesTableViewController.swift */,
+			);
+			path = FirstScenes;
+			sourceTree = "<group>";
+		};
+		A1384A3A2063018D0018F49D /* PersonalPages */ = {
+			isa = PBXGroup;
+			children = (
+				A1A2F48D206130AB00D68E1C /* ServicePageTableViewController.swift */,
+				A1A2F48B20612FEB00D68E1C /* HousePageTableViewController.swift */,
+				A1A2F48920612F8E00D68E1C /* PeoplePageTableView.swift */,
+			);
+			path = PersonalPages;
+			sourceTree = "<group>";
+		};
+		A18D8DC2207D0FCD008BB9BD /* CellsXibs */ = {
+			isa = PBXGroup;
+			children = (
+				A18D8DC0207D0ED9008BB9BD /* HouseTableViewCell.xib */,
+				A1F2A46620599F04001670D8 /* PeopleTableViewCell.xib */,
+				A18D8DC3207D10D0008BB9BD /* ServiceTableViewCell.xib */,
+				A1EF71C02080DA72003B420E /* ContactTableViewCell.xib */,
+				A1F5E7DB2081F18800095BD9 /* ConsiergeTableViewCell.xib */,
+			);
+			path = CellsXibs;
+			sourceTree = "<group>";
+		};
+		A1B1D21620A190670002B551 /* AddViews */ = {
+			isa = PBXGroup;
+			children = (
+				A114316820B3333000422D70 /* AddPeopleViewController.swift */,
+				A114316920B3333000422D70 /* AddPeopleViewController.xib */,
+				A114316C20B3333C00422D70 /* AddHouseViewController.swift */,
+				A114316D20B3333C00422D70 /* AddHouseViewController.xib */,
+				A114317020B3334600422D70 /* AddServiceViewController.swift */,
+				A114317220B3336500422D70 /* AddServiceViewController.xib */,
+				A114317420B338B000422D70 /* AddContactViewController.swift */,
+				A114317620B338BB00422D70 /* AddContactViewController.xib */,
+			);
+			path = AddViews;
+			sourceTree = "<group>";
+		};
+		A1EF71C22080DDAF003B420E /* CellModels */ = {
+			isa = PBXGroup;
+			children = (
+				A1EF71C52080DDF9003B420E /* HouseCellModel.swift */,
+				A1EF71C72080DE34003B420E /* PeopleCellModel.swift */,
+				A1EF71C92080DE42003B420E /* ServiceCellModel.swift */,
+				A1EF71CB2080DE51003B420E /* ContactCellModel.swift */,
+			);
+			path = CellModels;
+			sourceTree = "<group>";
+		};
+		A1EF71CD2080DF29003B420E /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				A1EF71CE2080DF57003B420E /* PeopleTableViewCell.swift */,
+				A1EF71D02080DF80003B420E /* HouseTableViewCell.swift */,
+				A1EF71D22080DFB9003B420E /* ServiceTableViewCell.swift */,
+				A1EF71D42080DFE9003B420E /* ContactTableViewCell.swift */,
+				A1F5E7DA2081F18800095BD9 /* ConsiergeTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		B0AF318F61A09E250378779D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F13A2B3B12E1D66A73ECA6B /* Pods-Domovoi.debug.xcconfig */,
+				FB38C2B4A6CCF1BEC35CD6A0 /* Pods-Domovoi.release.xcconfig */,
+				DD34BCDF69E3EC316D10D4EA /* Pods-DomovoiTests.debug.xcconfig */,
+				C0658DA0A02590219031BFAA /* Pods-DomovoiTests.release.xcconfig */,
+				D8EA705C6CD41B6DE83B4EF6 /* Pods-DomovoiUITests.debug.xcconfig */,
+				A4186A87F24F81225B38FD61 /* Pods-DomovoiUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18DCB215204F338F006D00AB /* Domovoi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18DCB240204F338F006D00AB /* Build configuration list for PBXNativeTarget "Domovoi" */;
+			buildPhases = (
+				5894556A60223AAA5D881F23 /* [CP] Check Pods Manifest.lock */,
+				18DCB212204F338F006D00AB /* Sources */,
+				18DCB213204F338F006D00AB /* Frameworks */,
+				18DCB214204F338F006D00AB /* Resources */,
+				EB1C4B9FAC2326563188BE0E /* [CP] Embed Pods Frameworks */,
+				928FAD78EFC9011B6F74B169 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Domovoi;
+			productName = Domovoi;
+			productReference = 18DCB216204F338F006D00AB /* Domovoi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18DCB22B204F338F006D00AB /* DomovoiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18DCB243204F338F006D00AB /* Build configuration list for PBXNativeTarget "DomovoiTests" */;
+			buildPhases = (
+				3FB29F722AD35C51052EFB58 /* [CP] Check Pods Manifest.lock */,
+				18DCB228204F338F006D00AB /* Sources */,
+				18DCB229204F338F006D00AB /* Frameworks */,
+				18DCB22A204F338F006D00AB /* Resources */,
+				0C1A9D0F4218F9523A494EE5 /* [CP] Embed Pods Frameworks */,
+				1AD362682FE2128E9FB4D475 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18DCB22E204F338F006D00AB /* PBXTargetDependency */,
+			);
+			name = DomovoiTests;
+			productName = DomovoiTests;
+			productReference = 18DCB22C204F338F006D00AB /* DomovoiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18DCB236204F338F006D00AB /* DomovoiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18DCB246204F338F006D00AB /* Build configuration list for PBXNativeTarget "DomovoiUITests" */;
+			buildPhases = (
+				6B7E446AF48CCA7970769CE3 /* [CP] Check Pods Manifest.lock */,
+				18DCB233204F338F006D00AB /* Sources */,
+				18DCB234204F338F006D00AB /* Frameworks */,
+				18DCB235204F338F006D00AB /* Resources */,
+				F993E110FB57281BDD7AF285 /* [CP] Embed Pods Frameworks */,
+				E020916430276185674C392C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18DCB239204F338F006D00AB /* PBXTargetDependency */,
+			);
+			name = DomovoiUITests;
+			productName = DomovoiUITests;
+			productReference = 18DCB237204F338F006D00AB /* DomovoiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18DCB20E204F338F006D00AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Дмитрий Яковлев";
+				TargetAttributes = {
+					18DCB215204F338F006D00AB = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
+					};
+					18DCB22B204F338F006D00AB = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18DCB215204F338F006D00AB;
+					};
+					18DCB236204F338F006D00AB = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18DCB215204F338F006D00AB;
+					};
+				};
+			};
+			buildConfigurationList = 18DCB211204F338F006D00AB /* Build configuration list for PBXProject "Domovoi" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18DCB20D204F338F006D00AB;
+			productRefGroup = 18DCB217204F338F006D00AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18DCB215204F338F006D00AB /* Domovoi */,
+				18DCB22B204F338F006D00AB /* DomovoiTests */,
+				18DCB236204F338F006D00AB /* DomovoiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18DCB214204F338F006D00AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A114316B20B3333000422D70 /* AddPeopleViewController.xib in Resources */,
+				18DCB226204F338F006D00AB /* LaunchScreen.storyboard in Resources */,
+				A110FC7120B2208000446920 /* Assets.xcassets in Resources */,
+				A114317320B3336500422D70 /* AddServiceViewController.xib in Resources */,
+				A1F2A46820599F04001670D8 /* PeopleTableViewCell.xib in Resources */,
+				A11E3B51207D04E2002DBB95 /* GoogleService-Info.plist in Resources */,
+				A114317720B338BC00422D70 /* AddContactViewController.xib in Resources */,
+				A1F5E7DD2081F18800095BD9 /* ConsiergeTableViewCell.xib in Resources */,
+				A18D8DC1207D0ED9008BB9BD /* HouseTableViewCell.xib in Resources */,
+				A1EF71C12080DA72003B420E /* ContactTableViewCell.xib in Resources */,
+				A114316F20B3333C00422D70 /* AddHouseViewController.xib in Resources */,
+				A18D8DC4207D10D0008BB9BD /* ServiceTableViewCell.xib in Resources */,
+				18DCB221204F338F006D00AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18DCB22A204F338F006D00AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A11E3B52207D04E2002DBB95 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18DCB235204F338F006D00AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A11E3B53207D04E2002DBB95 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C1A9D0F4218F9523A494EE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DomovoiTests/Pods-DomovoiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1AD362682FE2128E9FB4D475 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DomovoiTests/Pods-DomovoiTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FB29F722AD35C51052EFB58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DomovoiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5894556A60223AAA5D881F23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Domovoi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B7E446AF48CCA7970769CE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DomovoiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		928FAD78EFC9011B6F74B169 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Domovoi/Pods-Domovoi-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Domovoi/Pods-Domovoi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E020916430276185674C392C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DomovoiUITests/Pods-DomovoiUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB1C4B9FAC2326563188BE0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Domovoi/Pods-Domovoi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Domovoi/Pods-Domovoi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F993E110FB57281BDD7AF285 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DomovoiUITests/Pods-DomovoiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18DCB212204F338F006D00AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A114316E20B3333C00422D70 /* AddHouseViewController.swift in Sources */,
+				A117C97620B577E100C2AB10 /* LaunchViewController.swift in Sources */,
+				18DCB21A204F338F006D00AB /* AppDelegate.swift in Sources */,
+				A11DD911207E2F470073A88D /* PeopleEditorTableView.swift in Sources */,
+				A110FC6B20B1DD6100446920 /* TabBarViewController.swift in Sources */,
+				A114317520B338B000422D70 /* AddContactViewController.swift in Sources */,
+				A1EF71D52080DFE9003B420E /* ContactTableViewCell.swift in Sources */,
+				A1F2A46420599D88001670D8 /* ServicesTableViewController.swift in Sources */,
+				A1A2F48C20612FEB00D68E1C /* HousePageTableViewController.swift in Sources */,
+				A1A2F48A20612F8E00D68E1C /* PeoplePageTableView.swift in Sources */,
+				A1A2F48E206130AB00D68E1C /* ServicePageTableViewController.swift in Sources */,
+				A1EF71CC2080DE51003B420E /* ContactCellModel.swift in Sources */,
+				A1EF71CF2080DF57003B420E /* PeopleTableViewCell.swift in Sources */,
+				A1EF71C82080DE34003B420E /* PeopleCellModel.swift in Sources */,
+				A1C640E0207FB1C8003BFEBF /* ContactsTableViewController.swift in Sources */,
+				A19102CE205D3FF500470F48 /* ConsiergeInfo.swift in Sources */,
+				A10BA150207B5CA40052C303 /* HousesTableViewController.swift in Sources */,
+				A1EF71CA2080DE42003B420E /* ServiceCellModel.swift in Sources */,
+				A1EF71D32080DFB9003B420E /* ServiceTableViewCell.swift in Sources */,
+				A1EF71C62080DDF9003B420E /* HouseCellModel.swift in Sources */,
+				A114316A20B3333000422D70 /* AddPeopleViewController.swift in Sources */,
+				A1EF71D12080DF80003B420E /* HouseTableViewCell.swift in Sources */,
+				A117C97420B5750F00C2AB10 /* Counter.swift in Sources */,
+				A1F5E7DC2081F18800095BD9 /* ConsiergeTableViewCell.swift in Sources */,
+				A11DD91A207E43ED0073A88D /* ConsiergeTableViewController.swift in Sources */,
+				A114317120B3334600422D70 /* AddServiceViewController.swift in Sources */,
+				A11DD913207E2F580073A88D /* HouseEditorTableVIew.swift in Sources */,
+				A10BA14E207B5BF00052C303 /* PeopleTableViewController.swift in Sources */,
+				A11DD915207E2F670073A88D /* ServiceEditorTableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18DCB228204F338F006D00AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DCB231204F338F006D00AB /* DomovoiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18DCB233204F338F006D00AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DCB23C204F338F006D00AB /* DomovoiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18DCB22E204F338F006D00AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18DCB215204F338F006D00AB /* Domovoi */;
+			targetProxy = 18DCB22D204F338F006D00AB /* PBXContainerItemProxy */;
+		};
+		18DCB239204F338F006D00AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18DCB215204F338F006D00AB /* Domovoi */;
+			targetProxy = 18DCB238204F338F006D00AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18DCB21F204F338F006D00AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18DCB220204F338F006D00AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18DCB224204F338F006D00AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18DCB225204F338F006D00AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18DCB23E204F338F006D00AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18DCB23F204F338F006D00AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18DCB241204F338F006D00AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F13A2B3B12E1D66A73ECA6B /* Pods-Domovoi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8A534CJHW3;
+				INFOPLIST_FILE = Domovoi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MAIL.PARK.Domovoi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18DCB242204F338F006D00AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB38C2B4A6CCF1BEC35CD6A0 /* Pods-Domovoi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8A534CJHW3;
+				INFOPLIST_FILE = Domovoi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MAIL.PARK.Domovoi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18DCB244204F338F006D00AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD34BCDF69E3EC316D10D4EA /* Pods-DomovoiTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DomovoiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MAIL.PARK.DomovoiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Domovoi.app/Domovoi";
+			};
+			name = Debug;
+		};
+		18DCB245204F338F006D00AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0658DA0A02590219031BFAA /* Pods-DomovoiTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DomovoiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MAIL.PARK.DomovoiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Domovoi.app/Domovoi";
+			};
+			name = Release;
+		};
+		18DCB247204F338F006D00AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8EA705C6CD41B6DE83B4EF6 /* Pods-DomovoiUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DomovoiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MAIL.PARK.DomovoiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Domovoi;
+			};
+			name = Debug;
+		};
+		18DCB248204F338F006D00AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4186A87F24F81225B38FD61 /* Pods-DomovoiUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DomovoiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MAIL.PARK.DomovoiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Domovoi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18DCB211204F338F006D00AB /* Build configuration list for PBXProject "Domovoi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18DCB23E204F338F006D00AB /* Debug */,
+				18DCB23F204F338F006D00AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18DCB240204F338F006D00AB /* Build configuration list for PBXNativeTarget "Domovoi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18DCB241204F338F006D00AB /* Debug */,
+				18DCB242204F338F006D00AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18DCB243204F338F006D00AB /* Build configuration list for PBXNativeTarget "DomovoiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18DCB244204F338F006D00AB /* Debug */,
+				18DCB245204F338F006D00AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18DCB246204F338F006D00AB /* Build configuration list for PBXNativeTarget "DomovoiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18DCB247204F338F006D00AB /* Debug */,
+				18DCB248204F338F006D00AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18DCB20E204F338F006D00AB /* Project object */;
+}
