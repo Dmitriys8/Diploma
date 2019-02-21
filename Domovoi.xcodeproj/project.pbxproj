@@ -34,6 +34,7 @@
 		A11E3B51207D04E2002DBB95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A11E3B50207D04E2002DBB95 /* GoogleService-Info.plist */; };
 		A11E3B52207D04E2002DBB95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A11E3B50207D04E2002DBB95 /* GoogleService-Info.plist */; };
 		A11E3B53207D04E2002DBB95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A11E3B50207D04E2002DBB95 /* GoogleService-Info.plist */; };
+		A1490C1E221ED9B600CBE660 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1490C1D221ED9B600CBE660 /* LoginViewController.swift */; };
 		A18D8DC1207D0ED9008BB9BD /* HouseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A18D8DC0207D0ED9008BB9BD /* HouseTableViewCell.xib */; };
 		A18D8DC4207D10D0008BB9BD /* ServiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A18D8DC3207D10D0008BB9BD /* ServiceTableViewCell.xib */; };
 		A19102CE205D3FF500470F48 /* ConsiergeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19102CD205D3FF500470F48 /* ConsiergeInfo.swift */; };
@@ -108,6 +109,7 @@
 		A11DD914207E2F670073A88D /* ServiceEditorTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceEditorTableView.swift; sourceTree = "<group>"; };
 		A11DD919207E43ED0073A88D /* ConsiergeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsiergeTableViewController.swift; sourceTree = "<group>"; };
 		A11E3B50207D04E2002DBB95 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A1490C1D221ED9B600CBE660 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A18D8DC0207D0ED9008BB9BD /* HouseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseTableViewCell.xib; sourceTree = "<group>"; };
 		A18D8DC3207D10D0008BB9BD /* ServiceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceTableViewCell.xib; sourceTree = "<group>"; };
 		A19102CD205D3FF500470F48 /* ConsiergeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsiergeInfo.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				18DCB227204F338F006D00AB /* Info.plist */,
 				A11E3B50207D04E2002DBB95 /* GoogleService-Info.plist */,
 				A117C97320B5750F00C2AB10 /* Counter.swift */,
+				A1490C1D221ED9B600CBE660 /* LoginViewController.swift */,
 			);
 			path = Domovoi;
 			sourceTree = "<group>";
@@ -709,6 +712,7 @@
 				A19102CE205D3FF500470F48 /* ConsiergeInfo.swift in Sources */,
 				A10BA150207B5CA40052C303 /* HousesTableViewController.swift in Sources */,
 				A1EF71CA2080DE42003B420E /* ServiceCellModel.swift in Sources */,
+				A1490C1E221ED9B600CBE660 /* LoginViewController.swift in Sources */,
 				A1EF71D32080DFB9003B420E /* ServiceTableViewCell.swift in Sources */,
 				A1EF71C62080DDF9003B420E /* HouseCellModel.swift in Sources */,
 				A114316A20B3333000422D70 /* AddPeopleViewController.swift in Sources */,
