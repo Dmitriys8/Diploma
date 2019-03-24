@@ -13,6 +13,7 @@ class HousesTableViewController: UITableViewController {
     
     let cellIdentifier = "HouseTableViewCell"
     var max: Int = 0
+    var isUserLoggedIn: Bool = false
     
     @IBAction func addButtonPressed(_ sender: Any) {
         Database.database().reference().child("Houses").observeSingleEvent(of: .value) { (snapshot) in
@@ -26,15 +27,19 @@ class HousesTableViewController: UITableViewController {
             VC.numLast = self.max + 1
             VC.ServiceID = self.ServiceID
             self.present(VC, animated: true, completion: nil)
-        }
-        
+        }        
     }
+    
     var ModelArray = [HouseCellModel]()
     var ModelCell = HouseCellModel()
     var ServiceID: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if !isUserLoggedIn{
+            let VC = loginViewController()
+            self.present(VC, animated: true, completion: nil)
+        }
         tableView.dataSource = self
         tableView.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
         

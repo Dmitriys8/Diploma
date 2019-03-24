@@ -40,6 +40,9 @@
 		A1A2F48A20612F8E00D68E1C /* PeoplePageTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A2F48920612F8E00D68E1C /* PeoplePageTableView.swift */; };
 		A1A2F48C20612FEB00D68E1C /* HousePageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A2F48B20612FEB00D68E1C /* HousePageTableViewController.swift */; };
 		A1A2F48E206130AB00D68E1C /* ServicePageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A2F48D206130AB00D68E1C /* ServicePageTableViewController.swift */; };
+		A1A60C912247BDFB003020E4 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A60C8F2247BDFB003020E4 /* loginViewController.swift */; };
+		A1A60C922247BDFB003020E4 /* loginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1A60C902247BDFB003020E4 /* loginViewController.xib */; };
+		A1A60C942247C386003020E4 /* loginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A60C932247C386003020E4 /* loginData.swift */; };
 		A1C640E0207FB1C8003BFEBF /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C640DF207FB1C8003BFEBF /* ContactsTableViewController.swift */; };
 		A1EF71C12080DA72003B420E /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1EF71C02080DA72003B420E /* ContactTableViewCell.xib */; };
 		A1EF71C62080DDF9003B420E /* HouseCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF71C52080DDF9003B420E /* HouseCellModel.swift */; };
@@ -114,6 +117,9 @@
 		A1A2F48920612F8E00D68E1C /* PeoplePageTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplePageTableView.swift; sourceTree = "<group>"; };
 		A1A2F48B20612FEB00D68E1C /* HousePageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousePageTableViewController.swift; sourceTree = "<group>"; };
 		A1A2F48D206130AB00D68E1C /* ServicePageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePageTableViewController.swift; sourceTree = "<group>"; };
+		A1A60C8F2247BDFB003020E4 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		A1A60C902247BDFB003020E4 /* loginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = loginViewController.xib; sourceTree = "<group>"; };
+		A1A60C932247C386003020E4 /* loginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginData.swift; sourceTree = "<group>"; };
 		A1C640DF207FB1C8003BFEBF /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 		A1EF71C02080DA72003B420E /* ContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
 		A1EF71C52080DDF9003B420E /* HouseCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseCellModel.swift; sourceTree = "<group>"; };
@@ -190,6 +196,7 @@
 		18DCB218204F338F006D00AB /* Domovoi */ = {
 			isa = PBXGroup;
 			children = (
+				A1A60C8E2247BDD7003020E4 /* Login */,
 				A1B1D21620A190670002B551 /* AddViews */,
 				A18D8DC2207D0FCD008BB9BD /* CellsXibs */,
 				A1EF71CD2080DF29003B420E /* TableViewCells */,
@@ -281,6 +288,16 @@
 				A1F5E7DB2081F18800095BD9 /* ConsiergeTableViewCell.xib */,
 			);
 			path = CellsXibs;
+			sourceTree = "<group>";
+		};
+		A1A60C8E2247BDD7003020E4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A1A60C8F2247BDFB003020E4 /* loginViewController.swift */,
+				A1A60C902247BDFB003020E4 /* loginViewController.xib */,
+				A1A60C932247C386003020E4 /* loginData.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		A1B1D21620A190670002B551 /* AddViews */ = {
@@ -461,6 +478,7 @@
 				A11E3B51207D04E2002DBB95 /* GoogleService-Info.plist in Resources */,
 				A114317720B338BC00422D70 /* AddContactViewController.xib in Resources */,
 				A1F5E7DD2081F18800095BD9 /* ConsiergeTableViewCell.xib in Resources */,
+				A1A60C922247BDFB003020E4 /* loginViewController.xib in Resources */,
 				A18D8DC1207D0ED9008BB9BD /* HouseTableViewCell.xib in Resources */,
 				A1EF71C12080DA72003B420E /* ContactTableViewCell.xib in Resources */,
 				A114316F20B3333C00422D70 /* AddHouseViewController.xib in Resources */,
@@ -695,6 +713,7 @@
 				A117C97620B577E100C2AB10 /* LaunchViewController.swift in Sources */,
 				18DCB21A204F338F006D00AB /* AppDelegate.swift in Sources */,
 				A11DD911207E2F470073A88D /* PeopleEditorTableView.swift in Sources */,
+				A1A60C942247C386003020E4 /* loginData.swift in Sources */,
 				A110FC6B20B1DD6100446920 /* TabBarViewController.swift in Sources */,
 				A114317520B338B000422D70 /* AddContactViewController.swift in Sources */,
 				A1EF71D52080DFE9003B420E /* ContactTableViewCell.swift in Sources */,
@@ -705,6 +724,7 @@
 				A1EF71CC2080DE51003B420E /* ContactCellModel.swift in Sources */,
 				A1EF71CF2080DF57003B420E /* PeopleTableViewCell.swift in Sources */,
 				A1EF71C82080DE34003B420E /* PeopleCellModel.swift in Sources */,
+				A1A60C912247BDFB003020E4 /* loginViewController.swift in Sources */,
 				A1C640E0207FB1C8003BFEBF /* ContactsTableViewController.swift in Sources */,
 				A19102CE205D3FF500470F48 /* ConsiergeInfo.swift in Sources */,
 				A10BA150207B5CA40052C303 /* HousesTableViewController.swift in Sources */,

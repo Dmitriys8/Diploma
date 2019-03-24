@@ -9,9 +9,14 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
+    
+    var isUserLoggedIn: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let VC = loginViewController()
+        self.present(VC, animated: true, completion: nil)
+        
         // Do any additional setup after loading the view.
     }
 
