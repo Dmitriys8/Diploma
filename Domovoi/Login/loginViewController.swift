@@ -21,11 +21,24 @@ class loginViewController: UIViewController {
     }
 
     @IBAction func checkLoginPassword(_ sender: Any) {
-        let logData = loginData()
-        if loginTextField.text == logData.getLogin() && passwordTextField.text == logData.getPassword(){
+        var logData = [loginData]()
+        for i in 1...3{
+            let login: String? = "login" + (i as NSNumber).stringValue
+            let password = "password" + (i as NSNumber).stringValue
+            let loginPass = loginData(login: login, password: password)
+            logData.append(loginPass)
+        }
+        var fl: Bool? = false
+        for log in logData{
+            if loginTextField.text == log.getLogin() && passwordTextField.text == log.getPassword(){
+                fl = true
+                break
+            }
+        }
+        if fl == true{
             /*self.dismiss(animated: true, completion: nil)*/
             let alert = UIAlertController(title: "Отлично!", message: "Логин и пароль верные!", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "ОК", style: .destructive, handler: { _ in
+            alert.addAction(UIAlertAction(title: "ОК", style: .cancel, handler: { _ in
                 
             }))
             present(alert, animated: true, completion: nil)

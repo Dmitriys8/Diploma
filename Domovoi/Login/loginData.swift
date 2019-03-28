@@ -12,9 +12,9 @@ class loginData {
     var login: String?
     var password: String?
     
-    init(){
-        login = "login"
-        password = "password"
+    init(login: String?, password: String?){
+        self.login = login
+        self.password = password
     }
     
     public func getLogin() -> String?{
