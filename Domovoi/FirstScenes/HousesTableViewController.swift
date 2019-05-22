@@ -36,10 +36,10 @@ class HousesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if !isUserLoggedIn{
+        /*if !isUserLoggedIn{
             let VC = loginViewController()
             self.present(VC, animated: true, completion: nil)
-        }
+        }*/
         tableView.dataSource = self
         tableView.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
         
